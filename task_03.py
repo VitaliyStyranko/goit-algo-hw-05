@@ -7,8 +7,8 @@ def parse_log_line(line: str) -> dict:
     parts = line.split()
     date, time, level = parts[:3]
     message = " ".join(parts[3:])
-    return {"date": date, "time": time, "level": level, "message": message}
-    # return dict(date=date, time=time, level=level, message=message)
+    return dict(date=date, time=time, level=level, message=message)
+
 
 
 def load_logs(file_path: str) -> list:
