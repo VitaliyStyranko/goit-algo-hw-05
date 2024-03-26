@@ -36,7 +36,6 @@ def display_log_counts(counts: dict):
     """Displays log counts in a tabular format."""
     print("-" * 23)
     print(f"| {'Level':<8} | {'Count':<5} |")
-    # print("|  Level   |  Count | ")
     print("-" * 23)
     for level, count in counts.items():
         print(f"| {level:<8} | {count:<5} |")
