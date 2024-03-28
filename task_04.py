@@ -27,6 +27,8 @@ def add_contact(args, contacts):
         return "The name must include letters."
     if not phone.isnumeric():
         return "The phone must consist of digits."
+    if name in contacts:
+        return "Contact already exists. Use 'change' command to update."
     contacts[name] = phone
     return "Contact added."
 
